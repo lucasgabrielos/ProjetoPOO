@@ -18,7 +18,7 @@ public class Login extends javax.swing.JFrame {
      */
     public Login() {
         initComponents();
-        this.setExtendedState(MAXIMIZED_BOTH);   
+        this.setSize(900,500);   
         
     }
 
@@ -40,6 +40,7 @@ public class Login extends javax.swing.JFrame {
         jPasswordField1 = new javax.swing.JPasswordField();
         jFormattedTextField1 = new javax.swing.JFormattedTextField();
         jLabel1 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Login");
@@ -94,7 +95,6 @@ public class Login extends javax.swing.JFrame {
         getContentPane().add(jPasswordField1);
         jPasswordField1.setBounds(10, 380, 230, 30);
 
-        jFormattedTextField1.setForeground(new java.awt.Color(0, 0, 255));
         jFormattedTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jFormattedTextField1ActionPerformed(evt);
@@ -103,9 +103,13 @@ public class Login extends javax.swing.JFrame {
         getContentPane().add(jFormattedTextField1);
         jFormattedTextField1.setBounds(10, 320, 230, 30);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Imagens_1.jpg"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/Imagens/Imagens.jpg"))); // NOI18N
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(0, 0, 890, 470);
+        jLabel1.setBounds(-40, 0, 930, 470);
+
+        jLabel5.setText("jLabel5");
+        getContentPane().add(jLabel5);
+        jLabel5.setBounds(0, 0, 850, 470);
 
         pack();
         setLocationRelativeTo(null);
@@ -120,11 +124,11 @@ public class Login extends javax.swing.JFrame {
     }//GEN-LAST:event_jPasswordField1ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
+      new TelaPrincipal().setVisible(true); // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-      new TelaCadastro().setVisible(true);  // TODO add your handling code here:
+        new TelaCadastro().setVisible(true);  // TODO add your handling code here:
     }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
@@ -175,6 +179,9 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JPasswordField jPasswordField1;
     // End of variables declaration//GEN-END:variables
+
+
 }
