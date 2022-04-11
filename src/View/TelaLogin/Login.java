@@ -105,7 +105,7 @@ public class Login extends javax.swing.JFrame {
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/Imagens/Imagens.jpg"))); // NOI18N
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(-40, 0, 930, 470);
+        jLabel1.setBounds(-40, 0, 920, 470);
 
         jLabel5.setText("jLabel5");
         getContentPane().add(jLabel5);

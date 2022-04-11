@@ -16,7 +16,7 @@ public class TelaCadastro extends javax.swing.JFrame {
      */
     public TelaCadastro() {
         initComponents();
-        
+         this.setSize(900,500);
     }
 
     /**
@@ -59,17 +59,22 @@ public class TelaCadastro extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("TelaCadastro");
+        setResizable(false);
         getContentPane().setLayout(null);
 
+        jLabel1.setFont(new java.awt.Font("Arial", 3, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Email:");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(0, 101, 28, 14);
+        jLabel1.setBounds(10, 100, 50, 17);
         getContentPane().add(jFormattedTextField1);
         jFormattedTextField1.setBounds(70, 56, 242, 20);
 
+        jLabel2.setFont(new java.awt.Font("Arial", 3, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Nome:");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(0, 59, 31, 14);
+        jLabel2.setBounds(10, 60, 50, 17);
 
         jFormattedTextField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -77,11 +82,13 @@ public class TelaCadastro extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jFormattedTextField2);
-        jFormattedTextField2.setBounds(70, 95, 242, 20);
+        jFormattedTextField2.setBounds(70, 100, 242, 20);
 
+        jLabel3.setFont(new java.awt.Font("Arial", 3, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Senha:");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(0, 136, 34, 14);
+        jLabel3.setBounds(10, 140, 50, 20);
 
         jFormattedTextField3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -89,67 +96,86 @@ public class TelaCadastro extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jFormattedTextField3);
-        jFormattedTextField3.setBounds(70, 133, 244, 20);
+        jFormattedTextField3.setBounds(70, 140, 244, 20);
 
         jButton1.setText("Voltar");
         getContentPane().add(jButton1);
-        jButton1.setBounds(711, 382, 61, 23);
+        jButton1.setBounds(770, 390, 61, 23);
 
+        jLabel4.setFont(new java.awt.Font("Arial", 3, 14)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Telefone:");
         getContentPane().add(jLabel4);
-        jLabel4.setBounds(0, 174, 46, 14);
+        jLabel4.setBounds(0, 180, 70, 17);
         getContentPane().add(jFormattedTextField4);
-        jFormattedTextField4.setBounds(72, 171, 242, 20);
+        jFormattedTextField4.setBounds(70, 180, 242, 20);
 
+        jLabel5.setFont(new java.awt.Font("Arial", 3, 14)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("CPF:");
         getContentPane().add(jLabel5);
-        jLabel5.setBounds(0, 202, 23, 14);
+        jLabel5.setBounds(20, 220, 40, 17);
         getContentPane().add(jFormattedTextField5);
-        jFormattedTextField5.setBounds(72, 199, 242, 20);
+        jFormattedTextField5.setBounds(70, 220, 242, 20);
 
+        jLabel6.setFont(new java.awt.Font("Arial", 3, 14)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("RG:");
         getContentPane().add(jLabel6);
-        jLabel6.setBounds(0, 255, 18, 14);
+        jLabel6.setBounds(22, 260, 26, 17);
         getContentPane().add(jFormattedTextField6);
         jFormattedTextField6.setBounds(72, 259, 242, 20);
 
+        jLabel7.setFont(new java.awt.Font("Arial", 3, 14)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("Rua:");
         getContentPane().add(jLabel7);
-        jLabel7.setBounds(479, 59, 23, 14);
+        jLabel7.setBounds(480, 60, 40, 17);
 
+        jLabel8.setFont(new java.awt.Font("Arial", 3, 14)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("Bairro:");
         getContentPane().add(jLabel8);
-        jLabel8.setBounds(475, 136, 32, 14);
+        jLabel8.setBounds(470, 130, 60, 17);
 
+        jLabel9.setFont(new java.awt.Font("Arial", 3, 14)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("Cidade:");
         getContentPane().add(jLabel9);
-        jLabel9.setBounds(470, 174, 37, 14);
+        jLabel9.setBounds(460, 170, 60, 17);
 
+        jLabel10.setFont(new java.awt.Font("Arial", 3, 14)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
         jLabel10.setText("CEP:");
         getContentPane().add(jLabel10);
-        jLabel10.setBounds(484, 262, 23, 14);
+        jLabel10.setBounds(470, 250, 40, 17);
 
+        jLabel11.setFont(new java.awt.Font("Arial", 3, 14)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
         jLabel11.setText("Estado:");
         getContentPane().add(jLabel11);
-        jLabel11.setBounds(470, 213, 37, 14);
+        jLabel11.setBounds(460, 210, 50, 17);
 
+        jLabel12.setFont(new java.awt.Font("Arial", 3, 14)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
         jLabel12.setText("Número:");
         getContentPane().add(jLabel12);
-        jLabel12.setBounds(466, 98, 41, 14);
+        jLabel12.setBounds(460, 90, 60, 17);
         getContentPane().add(jFormattedTextField13);
         jFormattedTextField13.setBounds(530, 56, 242, 20);
         getContentPane().add(jFormattedTextField14);
-        jFormattedTextField14.setBounds(530, 95, 242, 20);
+        jFormattedTextField14.setBounds(530, 90, 242, 20);
         getContentPane().add(jFormattedTextField15);
-        jFormattedTextField15.setBounds(530, 133, 242, 20);
+        jFormattedTextField15.setBounds(530, 130, 242, 20);
         getContentPane().add(jFormattedTextField16);
-        jFormattedTextField16.setBounds(530, 171, 242, 20);
+        jFormattedTextField16.setBounds(530, 170, 242, 20);
         getContentPane().add(jFormattedTextField17);
         jFormattedTextField17.setBounds(530, 210, 242, 20);
         getContentPane().add(jFormattedTextField18);
-        jFormattedTextField18.setBounds(530, 259, 242, 20);
+        jFormattedTextField18.setBounds(530, 250, 242, 20);
 
         jLabel13.setFont(new java.awt.Font("Segoe UI Black", 3, 36)); // NOI18N
+        jLabel13.setForeground(new java.awt.Color(255, 255, 255));
         jLabel13.setText("Cadastre - se");
         getContentPane().add(jLabel13);
         jLabel13.setBounds(244, 11, 258, 34);
@@ -159,9 +185,10 @@ public class TelaCadastro extends javax.swing.JFrame {
         jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/Imagens/Tela de cadastro_1.png"))); // NOI18N
         jLabel15.setText("jLabel15");
         getContentPane().add(jLabel15);
-        jLabel15.setBounds(0, 0, 860, 440);
+        jLabel15.setBounds(0, 0, 900, 500);
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jFormattedTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jFormattedTextField3ActionPerformed
