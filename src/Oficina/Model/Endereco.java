@@ -8,4 +8,13 @@ public class Endereco extends Entidade {
     public String Estado;
     public int Cep;
     public int Numero;
+    
+    //Fk
+    public int CodigoUsuario;
+    public Usuario usuario;
+    
+    
+    public Endereco(){
+        
+    }
 }
